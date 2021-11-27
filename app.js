@@ -14,7 +14,7 @@ app.use('/api/v1/records', recordRouter);
 
 // Handle unhandled routes
 app.all('*', (req, res, next) => {
-    next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
+    next(new AppError(`Could not find path ${req.originalUrl}`, 404));
 });
 
 // Global error handler
