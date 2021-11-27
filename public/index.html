@@ -5,8 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nerve Assignment</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <h1>docs</h1> 
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">Nerve Assignment API Docs.</h1> 
+            <h2 class="header__author">Developed by Boyden Pires</h2>
+        </header>
+
+        <h1 class="get-postman">Get postman for testing these APIs <a href="https://www.postman.com/" class="postman-link">https://www.postman.com/</a></h1> 
+
+        <div class="endpoints-wrapper">
+            <h1 class="title">API ENDPOINTS</h1>
+
+            <h2 class="endpoint-title">Create record</h2>
+            <div class="demo">
+                <pre class="demo__url">POST   /records</pre>
+                <hr class="demo__break">
+                <pre class="demo__body">{
+    “srNo”: &ltSerial number&gt,
+    “name”: &ltName&gt
+}</pre>
+            </div>
+
+            <h2 class="endpoint-title">Get record</h2>
+            <div class="demo">
+                <pre class="demo__url">GET   /records/&ltsr.no&gt</pre>
+            </div>
+
+            <h2 class="endpoint-title">Get records</h2>
+            <div class="demo">
+                <pre class="demo__url">GET    /records</pre>
+            </div>
+
+            <h2 class="endpoint-title">Update record</h2>
+            <div class="demo">
+                <pre class="demo__url">PATCH   /records/&ltsr.no&gt</pre>
+                <hr class="demo__break">
+                <pre class="demo__body">{
+    “name”: &ltName&gt
+}</pre>
+            </div>
+
+            <h2 class="endpoint-title">Delete record</h2>
+            <div class="demo">
+                <pre class="demo__url">DELETE   /records/&ltsr.no&gt</pre>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
