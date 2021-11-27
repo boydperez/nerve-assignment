@@ -24,9 +24,11 @@
         <div class="endpoints-wrapper">
             <h1 class="title">API ENDPOINTS</h1>
 
+            <h2 class="absolute-url"><span class="url-short">{URL}</span> = https://nerve-assignment.herokuapp.com</h2>
+
             <h2 class="endpoint-title">Create record</h2>
             <div class="demo">
-                <pre class="demo__url">POST   /api/v1/records</pre>
+                <pre class="demo__url">POST   <span class="url-short">{URL}</span>/api/v1/records</pre>
                 <hr class="demo__break">
                 <pre class="demo__body">{
     “srNo”: &ltSerial number&gt,
@@ -36,17 +38,17 @@
 
             <h2 class="endpoint-title">Get record</h2>
             <div class="demo">
-                <pre class="demo__url">GET   /api/v1/records/&ltsr.no&gt</pre>
+                <pre class="demo__url">GET   <span class="url-short">{URL}</span>/api/v1/records/&ltsr.no&gt</pre>
             </div>
 
             <h2 class="endpoint-title">Get records</h2>
             <div class="demo">
-                <pre class="demo__url">GET    /api/v1/records</pre>
+                <pre class="demo__url">GET    <span class="url-short">{URL}</span>/api/v1/records</pre>
             </div>
 
             <h2 class="endpoint-title">Update record</h2>
             <div class="demo">
-                <pre class="demo__url">PATCH   /api/v1/records/&ltsr.no&gt</pre>
+                <pre class="demo__url">PATCH   <span class="url-short">{URL}</span>/api/v1/records/&ltsr.no&gt</pre>
                 <hr class="demo__break">
                 <pre class="demo__body">{
     “name”: &ltName&gt
@@ -55,7 +57,7 @@
 
             <h2 class="endpoint-title">Delete record</h2>
             <div class="demo">
-                <pre class="demo__url">DELETE   /api/v1/records/&ltsr.no&gt</pre>
+                <pre class="demo__url">DELETE   <span class="url-short">{URL}</span>/api/v1/records/&ltsr.no&gt</pre>
             </div>
         </div>
     </div>

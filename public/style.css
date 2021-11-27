@@ -74,11 +74,20 @@ a {
     font-weight: 500;
 }
 
+.absolute-url {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    color: var(--color-gray);
+}
+
+.url-short {
+    color: var(--color-blue);
+}
+
 .demo {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.4rem;
     background-color: #fff;
-    width: 30rem;
+    width: 38rem;
     height: auto;
     border-radius: 0.8rem;
     margin-bottom: 8rem;
@@ -91,8 +100,11 @@ a {
 
 .demo__url,
 .demo__body {
-    font-weight: 500;
-    padding: 1.8rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--color-gray);
 }
 
 .demo__url {
