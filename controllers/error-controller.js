@@ -1,8 +1,6 @@
 const AppError = require('./../utils/app-error');
 
 const handleDuplicateFieldsDB = err => {
-    // const value = err.errmsg.match(/(["'])(?:(?=(\\?))\2.)*?\1/)[0];
-    // const message = `Duplicate field value: ${value}. Please use another value`;
     const message = `Serial key taken. Please use a different one`;
     return new AppError(message, 400);
 }
